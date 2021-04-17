@@ -7,7 +7,7 @@ const SongList = ( { songs, onSongSelect }) => {
                 <div className="item" key={song.title}>
                     <div>
                         <button 
-                            onClick={onSongSelect(song)}
+                            onClick={() => onSongSelect(song)}
                             className="ui button primary"
                         >
                             Select
