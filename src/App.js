@@ -26,7 +26,6 @@ const songs = [
 
 const App = () => {
   const [selectedSong, setSelectedSong] = useState(null);
-  console.log(selectedSong);
   
   useEffect (() => {
     setSelectedSong(selectedSong);
