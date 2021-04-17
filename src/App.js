@@ -6,7 +6,7 @@ import SongDetail from './components/SongDetail';
 const songs = [
   {
     title: 'The Sign',
-    artist:'Ace Of Bass',
+    artist:'Ace Of Base',
     year:'1994',
     duration: '3:08'
   },
@@ -32,12 +32,11 @@ const App = () => {
   }, [selectedSong]);
 
   return ( 
-    <div>
-      <SongList 
-        onSongSelect={setSelectedSong}
-        songs={songs} 
-      />
-      <SongDetail song={selectedSong}/>
+    <div className="ui container grid">
+      <div className="ui row">
+        <div className="column eight wide" ><SongList  onSongSelect={setSelectedSong} songs={songs} /></div>
+        <div className="column eight wide" ><SongDetail song={selectedSong}/></div>
+      </div>
     </div>
   );
 };
