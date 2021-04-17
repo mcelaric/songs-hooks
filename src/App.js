@@ -29,8 +29,8 @@ const App = () => {
   console.log(selectedSong);
   
   useEffect (() => {
-    setSelectedSong(songs[1]);
-  }, []);
+    setSelectedSong(selectedSong);
+  }, [selectedSong]);
 
   return ( 
     <div>
